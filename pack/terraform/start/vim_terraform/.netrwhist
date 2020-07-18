@@ -1,4 +1,12 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhistcnt =2
-let g:netrw_dirhist_2='/home/dbrown/projects/Gitlab_IaaC/src/ansible'
-let g:netrw_dirhist_1='/home/dbrown/projects/Gitlab_IaaC/src/terraform'
+let g:netrw_dirhistcnt =1
+let g:netrw_dirhist_1='/home/dbrown/.vim'
+let g:netrw_dirhist_0='/home/dbrown/.vim/bundle/Jenkinsfile-vim-syntax/.git'
+let g:netrw_dirhist_9='/home/dbrown/.vim'
+let g:netrw_dirhist_8='/home/dbrown/.vim/bundle/Jenkinsfile-vim-syntax/ftdetect'
+let g:netrw_dirhist_7='/home/dbrown/.vim'
+let g:netrw_dirhist_6='/home/dbrown/.vim/bundle/Jenkinsfile-vim-syntax/indent'
+let g:netrw_dirhist_5='/home/dbrown/.vim'
+let g:netrw_dirhist_4='/home/dbrown/.vim/bundle/Jenkinsfile-vim-syntax/syntax'
+let g:netrw_dirhist_3='/home/dbrown/.vim'
+let g:netrw_dirhist_2='/home/dbrown/.vim/bundle/Jenkinsfile-vim-syntax'

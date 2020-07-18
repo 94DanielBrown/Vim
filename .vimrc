@@ -1,3 +1,17 @@
+"Plugins
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Plugin 'pearofducks/ansible-vim'
+Plugin 'preservim/nerdtree'
+Plugin 'itchyny/lightline.vim'
+Plugin 'hashivim/vim-terraform'
+Bundle 'OmniSharp/omnisharp-vim'
+call vundle#end()
+"NERDTree config
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
+
+
 "Keybindings
 inoremap kj <esc>
 inoremap <Leader>b <BS>
@@ -5,6 +19,7 @@ nnoremap <Leader>h kj<C-W>h
 nnoremap <Leader>j kj<C-W>j
 nnoremap <Leader>k kj<C-W>k
 noremap <Leader>l kj<C-W>l
+nmap <Leader>h :NERDTree<cr>
 "General
 syntax on
 set encoding=utf-8
@@ -39,6 +54,8 @@ autocmd BufWritePost *.py call flake8#Flake8()
 "Ansible config
 autocmd FileType yaml setlocal et ts=2 ai sw=2 nu sts=0
 set cursorline
+"Syntax highlight for Jenkinsfile
+au BufNewFile,BufRead Jenkinsfile setf groovy
 "Split config
 set splitbelow
 set splitright
