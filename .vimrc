@@ -10,8 +10,7 @@ Bundle 'OmniSharp/omnisharp-vim'
 call vundle#end()
 "NERDTree config
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
-
-
+nmap <leader>; :NERDTree<cr>
 "Keybindings
 inoremap kj <esc>
 inoremap <Leader>b <BS>
